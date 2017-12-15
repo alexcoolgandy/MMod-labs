@@ -1,3 +1,4 @@
+//Генерируем двери (с призом, выбор компьютера,первый и второй выбор игрока)
 function generate() {
     var doors = 3;
     var winDoor = randomDoors(doors);
@@ -32,11 +33,11 @@ function generate() {
         return false;
     }
 }
-
+//Генерируем двери с одной вероятностью
 function randomDoors(doors){
     return Math.round(Math.random() * ((doors + 0.49) - 0.5) + 0.5);
 }
-
+//Основная функция по прозождению по итерациям и сбору статистики
 function startSimulation() {
     var iteration = 10000;
     var result;

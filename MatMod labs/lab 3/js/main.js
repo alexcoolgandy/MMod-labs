@@ -1,3 +1,4 @@
+//Главная функция, хранит в себе матрицу и вызывает другие функции
 function main() {
     var matrix = [
             ["Y/X", 7.2, 10, 12.8, "Pyi"],
@@ -15,7 +16,7 @@ function main() {
 
     console.table(result);
 }
-
+//Расчет характеристик последовательности СВ
 function calculationCharakteristik(matrix) {
     var MX = 0, 
         MX2 = 0,
@@ -54,7 +55,7 @@ function calculationCharakteristik(matrix) {
     arrCharakteristiks.push(MX, MX2, DX, MY, MY2, DY, MXY, Kxy, Rxy, sigmaX, sigmaY);
     return(arrCharakteristiks);
 }
-
+//Расчет характеристик для X и Y: Кол-во Х по диапазонам, кол-во Y по диапазона и колличество пар значений XY
 function calculationForXandY(matrix) {
     var gistX = [],
         gistY = [],
@@ -137,7 +138,7 @@ function calculationForXandY(matrix) {
 
     return [arrForX, arrForY, statusXY];
 }
-
+//функция для рисования графиков. Получает на двумерный массив и распределяет его по графикам
 function drawCharts(arr) {
     var incomeX = document.getElementById("incomeX").getContext("2d");
     var barDataX = {
