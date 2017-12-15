@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="header.css" />
+
+    </head>
+    <body>
+        <div align="center">
+            <h6>
+                2 lab for MatMod. Create by student gr.444061 Klimovich Alexandr
+            </h6>
+            <p>Случайные числа <input type="button" value="Запустить" onclick="main()">
+            </p>Введите число случ.величин<input type="text" id="value" value="100000"></p>
+            </p>Введите мин. границу<input type="text" id="a" value="0"></p>
+            </p>Введите макс. границу<input type="text" id="b" value="10"></p>
+            <div>Гистограмма распределения по диапазонам<br><canvas id="gistogramma" width="900" height="400"></canvas></br></div>
+            <div>Функция распределения<br><canvas id="buyers" width="900" height="400" style="width: 600px; height: 400px;"></canvas></br></div>
+            <div>Плотность распределения<br><canvas id="buyers2" width="900" height="400" style="width: 600px; height: 400px;"></canvas></br></div>
+        </div>
+        <script src='Chart.min.js'></script>
+        <script src="main.js"></script>
+    </body>
+</html>
